@@ -1,0 +1,293 @@
+:root{
+    --azul-agua:#00D7C5;
+    --azul-marinho:#000E40;
+    --cor-letra-escura:#555555;
+    --cor-letra-clara:#666666;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;   
+}
+
+li{
+    list-style: none;
+}
+
+.topo{
+    background: var(--azul-agua);
+    width: 100vw;
+}
+
+.container-atopo{
+    margin-left: 10px;
+}
+
+.topo a{
+    text-decoration: none;
+    color: var(--azul-marinho);
+    font: 20px 'Poppins', sans-serif;
+    font-weight: 500;
+    
+}
+
+.header{
+    width: 100vw;
+    background-color: var(--azul-marinho);
+    padding: 10px;
+}
+
+.fone{
+    border-right: 2px solid var(--azul-marinho);
+}
+
+.navbar{
+    color: #fff;
+    background-color: var(--azul-marinho);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger{
+    display: none;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--azul-agua);
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: 24px 'Poppins', sans-serif;
+}
+
+.nav-item{
+    margin-left: 5rem;
+}
+
+.nav-link{
+    color: var(--azul-agua);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: #fff;
+}
+
+.fa-angle-down{
+    margin-left: 5px;
+}
+
+.fa-brands, .fa-behance{
+    margin-left: 5px;
+}
+/*Estilo da página sobre nós*/
+.hero-bg{
+    position: relative;
+    background: url('../img/sobrebg.jpg') repeat-x center;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.hero-bg img{
+    display:block;
+    margin:0px auto;
+    width:100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#sobre{
+    position:absolute;
+    color:#fff;
+    font: 32px 'Poppins', sans-serif;
+    font-weight: 600;
+    bottom: 10rem;
+    left:10vw;
+    
+}
+
+.historia{
+    font: 16px 'Poppins', sans-serif;
+    color: var(--cor-letra-escura);
+    margin: 50px 70px;
+}
+
+.texto-cinza{
+    color: var(--cor-letra-escura);
+    font: 26px 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+.local{
+    font: 16px 'Poppins', sans-serif;
+    color: var(--cor-letra-escura);
+    margin: 50px 70px;
+}
+
+.local h1{
+    font: 16px 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--azul-marinho);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.saiba-mais{
+    font: 16px 'Poppins', sans-serif;
+    color: var(--azul-marinho);
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.saiba-mais h1{
+    font: 24px 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.fale{
+    width: 100vw;
+    color: var(--azul-marinho);
+}
+
+.fale p{
+    font: 24px 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*Fim do Estilo da página sobre nós*/
+
+.centraliza{
+    margin-left: 55px;
+    margin-right: 55px;
+}
+    
+.bg-blue{
+    background-color: var(--azul-marinho);
+}
+/*Estilo dos Cards*/
+.container_cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.dimension{
+    width: 295px;
+    height: 280px;
+}
+
+.cards{
+    font: 24px 'Poppins', sans-serif;
+}
+
+.cards_text{
+    font: 16px 'Poppins', sans-serif;
+}
+
+.cards_text li{
+    color: #fff;
+    margin-left: 20px;
+    list-style-type: square;
+    margin-right: 50px;
+}
+
+.text_white{
+    color: #fff;
+}
+
+.align_r{
+    text-align: right;
+}
+
+/*Fim do Estilo dos Cards*/
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .container_cards{
+        display: block;
+    }
+}
+/*.menu{
+    display: flex;
+    text-align: center;
+    float: right;
+}
+.menu a{
+    background-color: var(--azul-marinho);
+    color: #fff;
+}*/
+
+footer {
+    background: var(--azul-agua);
+    width: 100vw;
+}
+
+
+footer p{
+    background: var(--azul-agua);
+    color: var(--azul-marinho);
+    text-align: center;
+    font: 16px 'Poppins', sans-serif;
+}
