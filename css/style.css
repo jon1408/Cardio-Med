@@ -32,7 +32,7 @@ li{
 .topo a{
     text-decoration: none;
     color: var(--azul-marinho);
-    font: 20px 'Poppins', sans-serif;
+    font: 14px 'Poppins', sans-serif;
     font-weight: 500;
     
 }
@@ -74,7 +74,7 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font: 24px 'Poppins', sans-serif;
+    font: 16px 'Poppins', sans-serif;
 }
 
 .nav-item{
