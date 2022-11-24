@@ -1,0 +1,111 @@
+:root{
+    --azul-agua:#00D7C5;
+    --azul-marinho:#000E40;
+    --cor-letra-escura:#555555;
+    --cor-letra-clara:#666666;
+}
+
+.centraliza{
+    margin-left: 55px;
+    margin-right: 55px;
+}
+    
+.bg-blue{
+    background-color: var(--azul-marinho);
+    color: #fff;
+}
+
+.bg-aqua{
+    background-color: var(--azul-agua);
+    color: #fff;
+}
+/*Estilo dos Cards*/
+.container_cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.rounded-radius{
+    border-radius: 1rem;
+}
+
+.dimension{
+    width: 295px;
+    height: 280px;
+}
+
+.cards{
+    font: 24px 'Poppins', sans-serif;
+}
+
+.cards_text{
+    font: 16px 'Poppins', sans-serif;
+}
+
+.cards_text li{
+    color: #fff;
+    margin-left: 20px;
+    list-style-type: square;
+    margin-right: 50px;
+}
+
+.align_r{
+    text-align: right;
+}
+
+/*Fim do Estilo dos Cards*/
+
+/*Start do Estilo Imagem-texto*/
+
+.text-img{
+    font: 24px 'Poppins', sans-serif;
+    color: #555;
+}
+
+.text-img-2{
+    font: 12px 'Poppins', sans-serif;
+    color: #666;
+}
+
+.bg-color-2{
+    background-color: #F3F5F9;
+    width: 100%;
+}
+
+.txt-white{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+/*Fim do Estilo Imagem-texto*/
+
+.text-gray-800-alt{
+    font: 2rem 'Poppins', sans-serif;
+    color: var(--cor-letra-escura);
+}
+
+.txt-white:hover{
+    color: var(--azul-agua);
+}
+
+.text-white{
+    text-shadow: 2px 1px #086498;
+    background-color: rgba(0, 97, 193, 0.2);
+    font-family: 'Poppins', sans-serif;
+}
+
+.py-px-alt{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+}
+
+@media only screen and (max-width: 768px){
+    .container_cards{
+        display: block;
+    }
+}

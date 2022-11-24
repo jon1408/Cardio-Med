@@ -9,8 +9,8 @@
     padding: 0;
     border: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-
 
 a{
     text-decoration: none;   
@@ -22,7 +22,7 @@ li{
 
 .topo{
     background: var(--azul-agua);
-    width: 100vw;
+    width: 100%;
 }
 
 .container-atopo{
@@ -38,7 +38,7 @@ li{
 }
 
 .header{
-    width: 100vw;
+    width: 100%;
     background-color: var(--azul-marinho);
     padding: 10px;
 }
@@ -101,15 +101,15 @@ li{
 /*Estilo da página sobre nós*/
 .hero-bg{
     position: relative;
-    background: url('../img/sobrebg.jpg') repeat-x center;
+    /*background: url('../img/sobrebg.jpg') repeat-x center;*/
     overflow: hidden;
-    width: 100vw;
+    width: 100%;
 }
 
 .hero-bg img{
     display:block;
     margin:0px auto;
-    width:100vw;
+    width:100%;
     height: 100vh;
     overflow: hidden;
 }
@@ -163,81 +163,127 @@ li{
     font-weight: 600;
 }
 
-.fale{
-    width: 100vw;
-    color: var(--azul-marinho);
+.video{
+    width: 100%;
+    border: none;
 }
 
-.fale p{
+.video>video{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.duvida{
     font: 24px 'Poppins', sans-serif;
     font-weight: 600;
+    color: var(--cor-letra-escura);
+    margin: 50px 70px;
     text-align: center;
+}
+
+.btn-colors{
+    border-color: var(--azul-marinho);
+    color: var(--azul-marinho);
+    margin-top: 50px;
+}
+
+.btn{
+    display: inline-block;
+    background: none !important;
+    padding: 20px 50px !important;
+    border-width: 2px !important;
+    border-style: solid !important;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px !important;
+    text-align: center;
+    box-sizing: border-box;
+    outline: 0;
+    cursor: pointer;
+}
+
+.rodape{
+    background-color: var(--azul-marinho);
+    width: 100%;
+    padding: 10px;
+}
+
+.text_white{
+    font-family: 'Poppins', sans-serif !important;
+    color: #fff;
+}
+
+.text_white-p{
+    font: 1rem 'Poppins', sans-serif;
+    color: #fff;
+    
+}
+
+.blog-cards{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.card-b{
+    background-color: var(--azul-agua);
+    color: var(--azul-marinho);
+    font: 1rem 'Poppins', sans-serif;
+    border-radius: 10px;
+    /*padding: 20px;*/
+    margin: 20px;
+    width: 300px;
+}
+
+.card-b img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-b-content{
+    padding: 20px 10px;
+}
+
+.card-b-content a{
+    color: #fff;
+    font-weight: 500;
+}
+
+.data-tema{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
 }
 
 /*Fim do Estilo da página sobre nós*/
 
-.centraliza{
-    margin-left: 55px;
-    margin-right: 55px;
-}
-    
-.bg-blue{
-    background-color: var(--azul-marinho);
-}
-/*Estilo dos Cards*/
-.container_cards{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-
+footer {
+    background: var(--azul-agua);
+    width: 100%;
 }
 
-.dimension{
-    width: 295px;
-    height: 280px;
-}
 
-.cards{
-    font: 24px 'Poppins', sans-serif;
-}
-
-.cards_text{
+footer h4{
+    background: var(--azul-agua);
+    color: var(--azul-marinho);
+    text-align: center;
     font: 16px 'Poppins', sans-serif;
 }
-
-.cards_text li{
-    color: #fff;
-    margin-left: 20px;
-    list-style-type: square;
-    margin-right: 50px;
-}
-
-.text_white{
-    color: #fff;
-}
-
-.align_r{
-    text-align: right;
-}
-
-/*Fim do Estilo dos Cards*/
 
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 8rem;
         flex-direction: column;
-        background-color: #fff;
+        background-color: var(--azul-marinho);
         width: 100%;
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+        z-index: 9999;
     }
 
     .nav-menu.active {
@@ -265,9 +311,12 @@ li{
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .container_cards{
-        display: block;
+    .blog-cards{
+        flex-direction: column;
+        align-items: center;
     }
+
+    
 }
 /*.menu{
     display: flex;
@@ -278,16 +327,3 @@ li{
     background-color: var(--azul-marinho);
     color: #fff;
 }*/
-
-footer {
-    background: var(--azul-agua);
-    width: 100vw;
-}
-
-
-footer p{
-    background: var(--azul-agua);
-    color: var(--azul-marinho);
-    text-align: center;
-    font: 16px 'Poppins', sans-serif;
-}

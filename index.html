@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon_1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/heartbeat.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/edit.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>-->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Hospital Cardio Med</title>
 </head>
@@ -25,10 +25,10 @@
     </div>
 <header class="header">
     <nav class="navbar">
-        <img src="img/logo_alt1.png" alt="logo do hospital Pró-Cardíaco">
+        <img src="img/logo_alt1.png" alt="logo do Cardio Med">
         <ul class="nav-menu">
             <li class="nav-item">
-                <a class="nav-link" href="#">Pacientes e Visitantes<i class="fa-solid fa-angle-down"></i></a>
+                <a class="nav-link" href="pacientes.html">Pacientes e Visitantes<!--<i class="fa-solid fa-angle-down"></i>--></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Médicos</i></a>
@@ -49,10 +49,10 @@
 </header>
 <main>
 
-<div data-aos="fade-right" class="container_cards">   
+<div class="container_cards">   
             <div class="flex w-full items-center flex justify-center items-center py-12 px-6">
                 <div>
-                    <div class="max-w-xs h-64 flex flex-col justify-between bg-blue dark:bg-gray-800 rounded-lg border border-gray-400 mb-6 py-5 px-4">
+                    <div class="max-w-xs h-64 flex flex-col justify-between bg-blue dark:bg-gray-800 rounded-radius border border-gray-400 mb-6 py-5 px-4">
                         <div class="dimension">
                             <h4 tabindex="0" class="cards focus:outline-none text_white dark:text-gray-100 font-bold mb-3">Paciente</h4>
                             <ul class="cards_text">
@@ -66,7 +66,7 @@
             </div>
             <div class="flex w-full items-center flex justify-center items-center py-12 px-6">
                 <div>
-                    <div class="max-w-xs h-64 flex flex-col justify-between bg-blue dark:bg-gray-800 rounded-lg border border-gray-400 mb-6 py-5 px-4">
+                    <div class="max-w-xs h-64 flex flex-col justify-between bg-blue dark:bg-gray-800 rounded-radius border border-gray-400 mb-6 py-5 px-4">
                         <div class="dimension">
                             <h4 tabindex="0" class="cards focus:outline-none text_white dark:text-gray-100 font-bold mb-3">Visitantes</h4>
                             <ul class="cards_text">
@@ -80,7 +80,7 @@
             </div>
             <div class="flex w-full items-center flex justify-center items-center py-12 px-6">
                 <div>
-                    <div class="max-w-xs h-64 flex flex-col justify-between bg-blue dark:bg-gray-800 rounded-lg border border-gray-400 mb-6 py-5 px-4">
+                    <div class="max-w-xs h-64 flex flex-col justify-between bg-blue dark:bg-gray-800 rounded-radius border border-gray-400 mb-6 py-5 px-4">
                         <div class="dimension">
                             <h4 tabindex="0" class="cards focus:outline-none text_white dark:text-gray-100 font-bold mb-3">Médicos</h4>
                             <ul class="cards_text">    
@@ -92,20 +92,216 @@
                     </div>
                 </div>
             </div>
-</div>        
+</div>
+        <div class="xl:mx-auto xl:container bg-color-2">
+            <div class="lg:px-20 md:px-6 px-4 md:py-12 py-8">
+                <div class="flex flex-col-reverse lg:flex-row items-center">
+                    <div class="w-full lg:w-1/2 md:py-9 py-6">
+                        <img src="img/fachada_lateral.png" alt="imagem da entrada de funcionários" class="lg:w-full h-full object-cover object-center w-full" />
+                    </div>
+                    <div class="lg:w-1/2 lg:pl-12 lg:pr-24">
+                        <!--<p class="text-sm leading-none text-gray-600 dark:text-white pb-2">Featured</p>-->
+                        <p class="md:text-3xl lg:text-4xl text-2xl font-semibold lg:leading-9 text-img dark:text-white lg:pb-6 md:pb-4 pb-2">Qualidade reconhecida para toda família</p>
+                        <p class="text-sm leading-5 text-img-2 dark:text-white md:pb-10 pb-8">O Hospital Cardio Med chega aos 63 anos com tradição e excelência no atendimento geral e em especial em cuidados cardiológicos e neurológicos. O Hospital dispõe de unidades adulta , Centro de terapia intensiva, Unidades Semi-intensivas e quartos preparados para atender diversos níveis de complexidade, 24h por dia, e sete dias da semana.</p>
+                        <div class="md:block flex items-center justify-center">
+                            <button class="lg:w-auto w-full border border-gray-800 hover:text-gray-50 hover:bg-gray-800 focus:outline-none lg:px-10 px-7 lg:py-4 py-3 text-sm leading-none text_white bg-blue rounded-radius dark:border-white dark:text-white dark:hover:bg-gray-800">Veja nossas especialidades</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div class="blog">
+            <div class="2xl:mx-auto 2xl:container lg:py-16 lg:px-40 xl:px-20 md:py-12 md:px-6 py-9 px-4">
+                <div class="flex flex-col items-center justify-center">
+                    <h1 class="text-4xl font-semibold leading-9 text-gray-800-alt dark:text-gray-50">Blog</h1>
+                    <!--<p class="text-base leading-6 text-center text-gray-600 dark:text-white sm:w-96 md:w-9/12 lg:w-5/12 mt-4">If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough</p>-->
+                </div>
+            </div>
+           <div class="blog-cards">
+              <section class="card-b">
+                    <img src="img/NOVEMBRO.png" alt="">
+                    <div class="card-b-content">
+                        <h2>Novembro Azul</h2>
+                        <p>Novembro Azul é um movimento internacional de conscientização sobre a prevenção do câncer de próstata. O movimento foi criado em 2003, na Austrália, e se espalhou pelo mundo. No Brasil, o movimento foi criado em 2008, e desde então, tem sido realizado anualmente.</p>
+                        <a href="http://www.institutodecegosdabahia.org.br/noticias/novembro-azul-campanha-de-combate-ao-cancer-de-prostata/" target="_blank">Leia mais</a>
+                        <!--<section class="data-tema">
+                            <h3>Sua Saude</h3>
+                            <h3>19/11/2022</h3>
+                        </section>-->
+                    </div>
+              </section>
+              <section class="card-b">
+                <img src="img/DEZEMBRO.png" alt="">
+                <div class="card-b-content">
+                    <h2>Dezembro Laranja</h2>
+                    <p>A campanha do Dezembro Laranja, organizada pela Sociedade Brasileira de Dermatologia (SBD), promove a conscientização a respeito dos riscos do câncer de pele, orientando a população a manter hábitos adequados de proteção solar (fotoproteção) e a realizar regularmente visitas ao dermatologista para obter uma avaliação especializada.</p>
+                    <a href="https://www.sbd.org.br/dezembrolaranja/" target="_blank">Leia mais</a>
+                    <!--<section class="data-tema">
+                        <h3>Sua Saude</h3>
+                        <h3>19/11/2022</h3>
+                    </section>-->
+                </div>
+              </section>
+              <section class="card-b">
+                <img src="img/Janeiro.png" alt="">
+                <div class="card-b-content">
+                    <h2>Janeiro Branco</h2>
+                    <p>A Campanha Janeiro Branco surgiu no Brasil em 2014 e este ano o lema principal é “o mundo pede saúde mental”. A frase é um alerta para a maior visibilidade e prevalência de problemas emocionais a partir da pandemia iniciada em 2020 que provocou um aumento no diagnóstico de doenças psíquicas.</p>
+                    <a href="https://www.ifpb.edu.br/noticias/2022/01/campanha-janeiro-branco-relembra-o-cuidado-com-a-saude-mental" target="_blank">Leia mais</a>
+                    <!--<section class="data-tema">
+                        <h3>Sua Saude</h3>
+                        <h3>19/11/2022</h3>
+                    </section>-->
+                </div>    
+           </div> 
+</div> 
+
+<div class="rodape">
+    <!-- Code block starts --> 
+    <dh-component>  
+        <div class="pt-12 xl:pt-14 px-6">
+            <div  tabindex="0" aria-label="footer" class="focus:outline-none w-full border-gray-300 dark:border-gray-700 border-t lg:w-11/12 md:w-11/12 lg:mx-auto md:mx-auto">
+                <div class="container mx-auto py-12">
+                    <div class="xl:flex lg:flex md:flex pt-6">
+                        <div class="w-11/12 xl:w-3/6 lg:w-2/5 mx-auto lg:mx-0 xl:mx-0">
+                            <div class="flex items-center mb-6 xl:mb-0 lg:mb-0">
+                               <div aria-label="logo" role="img">
+                               <img src="img/logo_alt1.png" alt="logo">
+                               </div>
+                            </div>
+                        </div>
+                        <div class="w-11/12 xl:w-1/6 lg:w-2/5 mx-auto lg:mx-0 xl:mx-0 pt-3 xl:flex flex-col xl:justify-start pl-3 sm:pl-0">
+                            <h2 tabindex="0" class="focus:outline-none text_white dark:text-white font-bold text-xl mb-6">Hospital CardioMed</h2>
+                            <p class="text_white-p">
+                                Rua General Polidoro, 20000 <br>
+                                Botafogo - Rio de Janeiro, RJ <br>
+                                CEP 22280-003</p>
+                        </div>
+                            <!--<ul>
+                                <li class="text-base text-white dark:text-gray-200 hover:text-gray-700 mb-5">
+                                    <a tabindex="0" class="focus:underline focus:outline-none" href="javascript:void(0)">About Us</a>
+                                </li>
+                                <li class="text-base text-white dark:text-gray-200 hover:text-gray-700 mb-5">
+                                    <a tabindex="0" class="focus:underline focus:outline-none" href="javascript:void(0)">Guidelines and how to</a>
+                                </li>
+                                <li class="text-base text-white dark:text-gray-200 hover:text-gray-700 mb-5">
+                                    <a tabindex="0" class="focus:underline focus:outline-none" href="javascript:void(0)">Quote from the best</a>
+                                </li>
+                                <li class="text-base text-white dark:text-gray-200 hover:text-gray-700 mb-5">
+                                    <a tabindex="0" class="focus:underline focus:outline-none" href="javascript:void(0)">How to start a blog</a>
+                                </li>
+                            </ul>
+                        <div class="w-11/12 xl:w-1/6 lg:w-2/5 mx-auto lg:mx-0 xl:mx-0 pt-3 xl:flex flex-col xl:justify-start pl-3 sm:pl-0">
+                            <h2 tabindex="0" class="focus:outline-none text-gray-800 dark:text-white font-bold text-xl mb-6">Getting Started</h2>
+                            <ul>
+                                <li class="text-base text-gray-800 dark:text-gray-200 hover:text-gray-700 mb-5">
+                                    <a tabindex="0" class="focus:underline focus:outline-none" href="javascript:void(0)">About Us</a>
+                                </li>
+                                <li class="text-base text-gray-800 dark:text-gray-200 hover:text-gray-700 mb-5">
+                                    <a tabindex="0" class="focus:underline focus:outline-none" href="javascript:void(0)">Guidelines and how to</a>
+                                </li>
+                                <li class="text-base text-gray-800 dark:text-gray-200 hover:text-gray-700 mb-5">
+                                    <a tabindex="0" class="focus:underline focus:outline-none" href="javascript:void(0)">Quote from the best</a>
+                                </li>
+                                <li class="text-base text-gray-800 dark:text-gray-200 hover:text-gray-700 mb-5">
+                                    <a tabindex="0" class="focus:underline focus:outline-none" href="javascript:void(0)">How to start a blog</a>
+                                </li>
+                                <li class="text-base text-gray-800 dark:text-gray-200 hover:text-gray-700 mb-5">
+                                    <a tabindex="0" class="focus:underline focus:outline-none" href="javascript:void(0)">Quote from the best</a>
+                                </li>
+                                <li class="text-base text-gray-800 dark:text-gray-200 hover:text-gray-700 mb-5">
+                                    <a tabindex="0" class="focus:underline focus:outline-none" href="javascript:void(0)">Guidelines and how to</a>
+                                </li>
+                            </ul>
+                        </div>-->
+                        <div class="w-11/12 xl:w-1/6 lg:w-2/5 mx-auto lg:mx-0 xl:mx-0 pt-3 xl:flex flex-col xl:justify-start pl-3 sm:pl-0">
+                            <h2 tabindex="0" class="focus:outline-none text_white dark:text-white font-bold text-xl mb-6">Centro Médico CardioMed</h2>
+                            <p class="text_white-p">
+                                Rua Mena Barreto, 20000 <br>
+                                Botafogo - Rio de Janeiro, RJ <br>
+                                CEP 22271-100</p>
+                        </div>
+                        <div class="w-11/12 xl:w-1/6 lg:w-2/5 mx-auto lg:mx-0 xl:mx-0 pt-3 xl:flex flex-col xl:justify-start pl-3 sm:pl-0">
+                            <h2 tabindex="0" class="focus:outline-none text-gray-800 dark:text-white font-bold text-xl mb-6">Resources</h2>
+                            <ul>
+                                <li class="text-base text-gray-800 dark:text-gray-200 hover:text-gray-700 mb-5">
+                                    <a tabindex="0" class="focus:underline focus:outline-none" href="javascript:void(0)">Accessibility</a>
+                                </li>
+                                <li class="text-base text-gray-800 dark:text-gray-200 hover:text-gray-700 mb-5">
+                                    <a tabindex="0" class="focus:underline focus:outline-none" href="javascript:void(0)">Usability</a>
+                                </li>
+                                <li class="text-base text-gray-800 dark:text-gray-200 hover:text-gray-700 mb-5">
+                                    <a tabindex="0" class="focus:underline focus:outline-none" href="javascript:void(0)">Marketplace</a>
+                                </li>
+                                <li class="text-base text-gray-800 dark:text-gray-200 hover:text-gray-700 mb-5">
+                                    <a tabindex="0" class="focus:underline focus:outline-none" href="javascript:void(0)">Design & Dev</a>
+                                </li>
+                                <li class="text-base text-gray-800 dark:text-gray-200 hover:text-gray-700 mb-5">
+                                    <a tabindex="0" class="focus:underline focus:outline-none" href="javascript:void(0)">Marketplace</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="xl:flex flex-wrap justify-between xl:mt-24 mt-16 pb-6 pl-3 sm:pl-0">
+                        <div class="w-11/12 xl:w-2/6 mx-auto lg:mx-0 xl:mx-0 mb-6 xl:mb-0">
+                            <p tabindex="0" class="focus:outline-none text-gray-800 dark:text-white text-base">2022 Hospital CardioMed. All Rights Reserved</p>
+                        </div>
+                        <div class="w-11/12 xl:w-2/6 mx-auto lg:mx-0 xl:mx-0 mb-6 lg:mb-0 xl:mb-0">
+                            <ul class="xl:flex lg:flex md:flex sm:flex justify-between">
+                                <li class="text-gray-800 dark:text-white hover:text-gray-900 text-base mb-4 sm:mb-0">
+                                    <a class="focus:outline-none focus:underline" href="javascript:void(0)">Terms of service</a>
+                                </li>
+                                <li class="text-gray-800 dark:text-white hover:text-gray-900 text-base mb-4 sm:mb-0">
+                                    <a class="focus:outline-none focus:underline" href="javascript:void(0)">Privacy Policy</a>
+                                </li>
+                                <li class="text-gray-800 dark:text-white hover:text-gray-900 text-base mb-4 sm:mb-0">
+                                    <a class="focus:outline-none focus:underline" href="javascript:void(0)">Security</a>
+                                </li>
+                                <li class="text-gray-800 dark:text-white hover:text-gray-900 text-base mb-4 sm:mb-0">
+                                    <a class="focus:outline-none focus:underline" href="javascript:void(0)">Sitemap</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-11/12 xl:w-1/6 lg:w-1/6 sm:w-11/12 mx-auto lg:mx-0 xl:mx-0 mb-6 lg:mb-0 xl:mb-0 mt-8 lg:mt-8 xl:mt-0">
+                            <div class="flex justify-start sm:justify-start xl:justify-end space-x-6 pr-2 xl:pr-0 lg:pr-0 md:pr-0 sm:pr-0">
+                                <div>
+                                    <a aria-label="Twitter" role="link" href="javascript:void(0)">
+                                       <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_with_sitemap-svg2.svg" alt="Twitter">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a aria-label="Instagram" role="link" href="javascript:void(0)">
+                                      <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_with_sitemap-svg3.svg" alt="Instagram">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a aria-label="Dribble" role="link" href="javascript:void(0)">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_with_sitemap-svg4.svg" alt="Dribble">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a aria-label="Github" role="link" href="javascript:void(0)">
+                                      <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/footer_with_sitemap-svg5.svg" alt="Github">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dh-component>
+    <!-- Code block ends -->
+</div>           
 </main>
-<footer>
-    
-</footer>
+    <footer>
+        <h4><strong>Designed by JonDEV</strong></h4>
+    </footer>
     <!-- Scripts -->
     <script src="js/script.js"></script>
-    <script src="js/start.js"></script>
+    <!--<script src="js/start.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>-->
 </body>
 </html>
