@@ -201,12 +201,7 @@ li{
     box-sizing: border-box;
     outline: 0;
     cursor: pointer;
-}
-
-.rodape{
-    background-color: var(--azul-marinho);
-    width: 100%;
-    padding: 10px;
+    width: 15rem;
 }
 
 .text_white{
@@ -257,6 +252,233 @@ li{
 }
 
 /*Fim do Estilo da página sobre nós*/
+
+/*Estilo da página de Pacientes*/
+.pacientes-cards{
+    background-color: #F3F5F9;
+}
+
+.text-pacientes{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--cor-letra-escura);
+    padding: 50px 70px;
+    text-align: center;
+}
+
+.text-pacientes p{
+    font-size: 1.6rem;
+    color: var(--azul-marinho);
+}
+
+.text-pacientes h1{
+    font-size: 2rem;
+    color: var(--cor-letra-escura);
+}
+
+.cards-pacientes{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.list-cards{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 8rem;
+    flex-wrap: wrap;
+}
+
+.list-item{
+    border-radius: 20px;
+    background-color: #fff;
+    width: 210px;
+    height: 160px;
+    padding: 20px;
+    box-shadow: 0px 1px 30px -1px rgba(122, 122, 122, 0.30);
+    -webkit-box-shadow: 0px 1px 30px -1px rgba(122, 122, 122, 0.30);
+    -moz-box-shadow: 0px 1px 30px -1px rgba(122, 122, 122, 0.30);
+}
+
+.list-item h3{
+    font: 1.2rem 'Poppins', sans-serif; 
+    line-height: 1.4rem;
+    font-weight: bold;
+}
+
+.saiba-mais-txt{
+    color: var(--cor-letra-escura);
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.saiba-mais-txt>h1{
+    font: 1.5rem 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.cards-list-g{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.item-card-g{
+    border-radius: 20px;
+    background-color: var(--azul-marinho);
+    color: #fff;
+    width: 260px;
+    height: 175px;
+    padding: 20px;
+}
+
+.item-card-g p{
+    font: 1.5rem 'Poppins', sans-serif; 
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+.cards-list-m{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+.item-card-m{
+    border-radius: 20px;
+    background-color: var(--azul-marinho);
+    color: #fff;
+    width: 260px;
+    height: 145px;
+    padding: 20px;
+}
+
+.item-card-m p{
+    font: 1.5rem 'Poppins', sans-serif; 
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+.local-side{
+    background-color: #F3F5F9;
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+}
+
+.local-side-txt{
+    font: 2rem 'Poppins', sans-serif;
+    font-weight: bold;
+    color: var(--cor-letra-escura);
+    padding: 50px 70px;
+    text-align: left;
+    width: 40%;
+}
+
+.local-side-txt p, .local-side-txt h3{
+    font: 1rem 'Poppins', sans-serif;
+    color: var(--cor-letra-escura);
+}
+
+.local-side-txt p{
+    padding-bottom: 1rem;
+}
+
+.local-side-txt h3{
+    font-weight: bold;
+}
+
+.local-side-map{
+
+    padding-left: 10rem;
+    width: 68%
+}
+
+.ir-medicos{
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+}
+
+.ir-medicos>a>p{
+    font: 1rem 'Poppins', sans-serif;
+    color: var(--cor-letra-escura);
+    font-weight: 500;
+}
+
+/*Fim do Estilo da página de Pacientes*/
+
+/*Estilo da página de Médicos*/
+.medicos-cards{
+    background-color: #F3F5F9;
+}
+
+.blog-publi{
+    background-color: #F3F5F9;
+    padding-bottom: 3rem;
+}
+
+.content-txt{
+    font: 1.5rem 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--cor-letra-escura);
+    padding: 50px 70px;
+    text-align: center;
+}
+
+.card-blog{
+    width: 345px;
+    height: 390px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.card-blog img{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-blog h3{
+    font: 1.2rem 'Poppins', sans-serif;
+    color: var(--cor-letra-clara);
+    font-weight: 500;
+    padding: 1rem;
+}
+
+.card-blog>span{
+    display: flex;
+    justify-content: space-between;
+    font: .785rem 'Poppins', sans-serif;
+    color: var(--cor-letra-clara);
+    font-weight: 500;
+    padding: 6rem 1rem 1rem 1rem;
+}
+
+.card-blog>span>p>i{
+    padding-right: 10px;
+}
+
+/*Fim do Estilo da página de Médicos*/
+
+/*Estilo da página de Contato*/
+
+/*Fim do Estilo da página de Contato*/
+
+/*Estilo da parte do footer*/
+
+.rodape{
+    background-color: var(--azul-marinho);
+    width: 100%;
+    padding: 10px;
+}
 
 footer {
     background: var(--azul-agua);
@@ -316,7 +538,45 @@ footer h4{
         align-items: center;
     }
 
+    .cards-pacientes{
+        flex-direction: column;
+        align-items: center;
+    }
+    .list-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-item{
+        margin: 20px 0;
+    }
     
+    .item-card-g{
+        margin-bottom: 2rem;
+    }
+
+    .item-card-m{
+        margin-bottom: 2rem;
+    }
+
+    .local-side{
+        flex-direction: column;
+        align-items: right;
+    }
+
+    .local-side-txt{
+        width: 100%;
+        padding: 50px 20px;
+    }
+
+    .local-side-txt p{
+        font-size: 1rem;
+    }
+
+    .local-side-map{
+        padding-left: 0;
+        width: 100%;
+    }
 }
 /*.menu{
     display: flex;
