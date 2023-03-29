@@ -105,14 +105,28 @@
 }
 
 .fa-location-dot{
-    font-size: 1.5rem;
+    width: 3.125rem;
+    height: 3.125rem;
     padding-right: 5px;
+}
+
+.fa-car, .fa-train-subway, .fa-bus{
+    width: 2.813rem;
+    height: 2.813rem;
+    font-size: 2.813rem;
 }
 
 iframe{
     width: 100%;
     height: 100%;
-    padding: 3rem 0;
+}
+
+
+
+@media screen and (min-width: 1280px) {
+    .big-w1{
+        width: 16.6666666667%;
+    }
 }
 
 @media only screen and (max-width: 768px){

@@ -370,6 +370,7 @@ li{
     display: flex;
     justify-content: space-between;
     height: 600px;
+    margin-bottom: 3rem;
 }
 
 .local-side-txt{
@@ -469,7 +470,155 @@ li{
 /*Fim do Estilo da página de Médicos*/
 
 /*Estilo da página de Contato*/
+.text-contato{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--cor-letra-escura);
+    padding: 50px 70px;
+    text-align: center;
+}
 
+.text-contato p{
+    font-size: 1.6rem;
+    color: var(--azul-marinho);
+}
+
+.text-contato h1{
+    font-size: 2rem;
+    color: var(--cor-letra-escura);
+}
+
+.text-contato h3{
+    text-align: justify;
+    width: 970px;
+    margin: 2.5rem auto;
+    font-size: 1rem;
+    color: var(--cor-letra-escura);
+    font-weight: 400;
+}
+
+.info-box{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 0 3rem auto;
+    flex-wrap: wrap;
+    background-color: #F3F5F9;
+}
+
+.quad-blue{
+    font: 1rem 'Poppins', sans-serif;
+    width: 566px;
+    height: 496px;
+    color: var(--azul-agua);
+    background-color: var(--azul-marinho);
+    padding: 48px;
+}
+
+.quad-blue h1{
+    font-size: 2.375rem;
+    font-weight: 600;
+}
+
+.quad-blue p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1px;
+}
+
+#ue{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--azul-agua);
+    margin: 2rem 0 4rem;
+}
+
+.quad-blue h4{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--azul-agua);
+    margin: 0 0 1.375rem;
+}
+
+.setores{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dados-setores{
+    font-family: 'Poppins', sans-serif;
+    padding: 3rem;
+}
+
+.dados-setores p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--azul-marinho);
+}
+
+.dados-setores h3{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cor-letra-clara);
+}
+
+#exames, #tesouraria, #ouvidoria, #achados{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--cor-letra-clara);
+}
+
+
+/*.dados-setores h1{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--azul-marinho);
+}
+
+.dados-setores h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--cor-letra-clara);
+    margin-bottom: 2rem;
+}*/
+
+.botao{
+    background-color: var(--azul-marinho);
+    color: var(--azul-agua);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: none;
+    margin: .625rem 0 1.5rem;
+}
+
+.modal{
+    display: flex;
+    background-color: #F3F5F9;
+    font: 1rem 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 4rem;
+}
+
+.container-tipo{
+    display: flex;
+    padding: 4rem .938rem 2rem;
+    margin: 0 12rem 4rem;
+}
+
+.tipo{
+    display: flex;
+    width: 420px;
+    height: 70px;
+}
+
+.txt-tipo{
+    padding-left: 2rem;
+}
 /*Fim do Estilo da página de Contato*/
 
 /*Estilo da parte do footer*/
@@ -576,6 +725,17 @@ footer h4{
     .local-side-map{
         padding-left: 0;
         width: 100%;
+    }
+
+    .text-contato h3{
+        font-size: .75rem;
+        width: 100%;
+    }
+
+    .quad-blue{
+        width: 100%;
+        padding: 48px;
+        height: 550px;
     }
 }
 /*.menu{
