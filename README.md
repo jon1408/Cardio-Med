@@ -1,6 +1,6 @@
 # Cardio Med
 
-Institucional site for Cardio Med Hospital
+Institutional site for Cardio Med Hospital
 
 
 ## Author
